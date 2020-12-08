@@ -14,8 +14,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class SellerSignupRequestDTO {
 
-    private String legalName;
-    private String displayName;
+    private String firstName;
+    private String lastName;
     private String emailId;
     private String password;
     private String countryCode;
