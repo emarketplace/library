@@ -8,11 +8,23 @@
         <version>2.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    
     <groupId>com.marketplace</groupId>
     <artifactId>library</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>library</name>
     <description>Market Place Library</description>
+	
+	<distributionManagement>
+  <snapshotRepository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+    <id>ossrh</id>
+    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+  </repository>
+</distributionManagement>
 
   <developers>
     <developer>
