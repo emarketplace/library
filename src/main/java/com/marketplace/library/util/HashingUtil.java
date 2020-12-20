@@ -1,9 +1,5 @@
 package com.marketplace.library.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.util.ObjectUtils;
-
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -14,16 +10,15 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public class HashingUtil {
-    private static final Logger logger = LoggerFactory.getLogger(HashingUtil.class);
 
     public static String getSha256Hash(String email) {
-        if (!ObjectUtils.isEmpty(email)) {
+        if (email != null && !email.isEmpty()) {
             try {
                 MessageDigest digest = MessageDigest.getInstance("SHA-256");
                 byte[] encodedHash = digest.digest(email.getBytes(StandardCharsets.UTF_8));
                 return bytesToHex(encodedHash);
             } catch (NoSuchAlgorithmException noSuchAlgorithmException) {
-                logger.error("Error while generating email hash", noSuchAlgorithmException);
+                noSuchAlgorithmException.printStackTrace();
             }
         }
         return email;
