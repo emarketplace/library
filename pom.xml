@@ -8,6 +8,30 @@
     <name>library</name>
     <description>Market Place Library</description>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <developers>
+        <developer>
+            <name>job daniel</name>
+            <email>jobdaniel0@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/emarketplace/library.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:emarketplace/library.git</developerConnection>
+        <url>https://github.com/emarketplace/library</url>
+    </scm>
+
     <properties>
         <java.version>11</java.version>
     </properties>
