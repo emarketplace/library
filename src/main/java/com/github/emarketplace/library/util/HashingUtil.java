@@ -1,4 +1,4 @@
-package com.marketplace.library.util;
+package com.github.emarketplace.library.util;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

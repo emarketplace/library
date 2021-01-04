@@ -1,4 +1,4 @@
-package com.marketplace.library.dto.exception;
+package com.github.emarketplace.library.dto.exception;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

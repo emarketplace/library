@@ -1,4 +1,4 @@
-package com.marketplace.library.dto.user;
+package com.github.emarketplace.library.dto.user;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
