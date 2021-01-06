@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Maven Deploy') {
             steps {
-                withMaven() {
+                withMaven([maven: 'maven', mavenSettingsConfig: 'mavensettings']) {
                     sh 'mvn clean deploy'
                 }
             }
